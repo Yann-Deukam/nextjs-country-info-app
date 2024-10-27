@@ -5,6 +5,10 @@
 body {
   background: url("/bg.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
 }
 
 @layer base {
@@ -66,9 +70,6 @@ body {
 @layer base {
   * {
     @apply border-border;
-  }
-  body {
-    @apply text-foreground;
   }
   .nav-items a {
     @apply hover:text-muted;

@@ -1,5 +1,12 @@
+import Banner from "@/components/Banner";
+import CountryList from "@/components/CountryList";
 import Image from "next/image";
 
 export default function Home() {
-  return <div className="text-3xl font-bold">Hello world</div>;
+  return (
+    <>
+      <Banner />
+      <CountryList />
+    </>
+  );
 }
