@@ -78,4 +78,20 @@ body {
   .country-card {
     @apply bg-zinc-800/40 h-72 rounded-lg flex flex-col px-4 py-8 items-center justify-between shadow-md border border-white/20 hover:scale-105 hover:shadow-xl transition-all ease-in-out duration-150;
   }
+
+  .fade {
+    background-image: linear-gradient(
+      transparent 12%,
+      currentColor 30%,
+      currentColor 70%,
+      transparent 86%
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-attachment: fixed;
+  }
+
+  .fade p {
+    color: transparent !important;
+  }
 }
